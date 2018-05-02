@@ -46,9 +46,25 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{item.packageName}"
+                android:text="@{item.version}"
                 android:textColor="#616161"
                 android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{item.packageName}"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+            <!-- SHA1码不常用，这里设置隐藏 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{item.sha1}"
+                android:textColor="#616161"
+                android:textSize="14sp"
+                android:visibility="gone" />
 
         </LinearLayout>
 
